@@ -1,0 +1,207 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100italic,500,500italic,700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,100);
+
+body {
+	text-align: center;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	margin:	0;
+}
+
+header {
+	background-color: rgba(237,190,156,.5);
+	max-height: 80px;
+}
+
+nav {
+	float: right;
+	display: block;
+}
+
+section {
+	text-align: right;
+	clear: both;
+	padding: 2% 0;
+}
+
+p {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	color: #000;
+	font-size: 25px;
+	padding-left: 350px;
+	padding-right: 350px;  
+	letter-spacing: 2px;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+a {
+	color: #70B1B2;
+	display: block;
+}
+
+a:hover {
+	color: rgb(71,78,79);
+	text-transform: uppercase;
+}
+
+footer {
+	background-color: rgba(237,190,156,.5);
+	max-height: 60px;
+	width:100%;
+	bottom:0;
+	left:0;
+	clear: both;
+}
+
+figure {
+	display: inline;
+	float: left;
+	margin: 50px auto;
+	width: 35%
+
+}
+
+figcaption {
+	font-family: 'Josefin Slab', serif;
+	font-size: 1.5em;
+	max-width: 800px;
+	margin: 0 auto;
+	color: white;
+	text-align: center;
+}
+
+h1{
+	text-align: center;
+}
+
+h2 {
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+h3 {
+	margin: 0;
+}
+
+h4 {
+	color:	white;
+	text-align: center;
+	font-size: 4em;
+	margin: 0 auto;
+}
+
+article {
+	text-align: center;
+	font-size: 2.5em;
+	font-family: 'Josefin Slab', serif;
+	color: white;
+}
+
+img {
+	max-width: 100%;
+}
+
+.clearfix:after{
+	height: 0;
+	font-size: 0;
+	visibility: hidden;
+	display: block;
+	content: " ";
+	clear: both;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+}
+
+.navlinks {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	position: fixed, 100%;
+	margin: 30px;
+	padding: 0;
+	text-align: center;	
+	list-style-type: none;
+	color: #fff;
+	font-weight: bolder;
+	font-style: italic;
+	text-decoration: none;
+	float: right;
+}
+
+.socmedia {
+	display: inline;
+	float: left;
+	margin: 10px 15px;
+}
+
+.contact {
+	display: inline;
+	margin: 0 15px;
+}
+
+.blackandwhite {
+	max-width: 25%;
+	max-height: 25%;
+}
+
+#whoweare {
+	background: url(../images/backgroundmilkyway.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#navlogo {
+	float: left;
+	padding: 10px 0 10px 10px;
+}
+
+#slogan {
+	font-family: 'Josefin Slab', serif;
+	color: #41495C;
+	font-weight: thin;
+	text-transform: uppercase;
+	font-size: 50px; 
+	font-decoration: underline;
+	margin: 50px auto;
+}
+
+#home {
+	background: url(../images/background.jpg);
+	background-size: cover;   
+	background-repeat: no-repeat;
+	text-align: center;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	margin:	0;
+}
+
+#hazen {
+	float: left;
+	display: block;
+	margin: 0 auto;
+	width: 30%;
+	padding: 0 5% 0 15%; 
+}
+
+#katie{
+	float: right;
+	display: block;
+	margin: 0 auto;
+	width: 30%;
+	padding: 0 15% 0 5%; 
+}
+
+#footcontact {
+	margin: 0;
+	display: inline;
+}
+
+#pbio {
+	font-family: 'Josefin Slab', serif;
+	color: white;
+	margin: 0;
+}
+
+#bio {
+	margin: 0 auto;
+	padding: 100px 0;
+}
