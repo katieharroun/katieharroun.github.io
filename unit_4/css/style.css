@@ -119,9 +119,9 @@ article {
 	color: white;
 }
 
-/*img {
-	max-width: 100%;
-}*/
+img {
+	max-width: 100%
+}
 
 .clearfix:after{
 	height: 0;
