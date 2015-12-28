@@ -1,10 +1,26 @@
 @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,100italic,500,500italic,700);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab:400,700,100);
 
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
 	text-align: center;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	margin:	0;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	min-height: 100vh;
 }
 
 header {
@@ -21,6 +37,11 @@ section {
 	text-align: right;
 	clear: both;
 	padding: 2% 0;
+	-webkit-box-flex: 1; 
+	-webkit-flex: 1 0 auto;     
+	-ms-flex: 1 0 auto;     
+	flex: 1 0 auto;     
+	width: 100%;
 }
 
 p {
@@ -57,7 +78,7 @@ figure {
 	display: inline;
 	float: left;
 	margin: 50px auto;
-	width: 35%
+	width: 45%
 
 }
 
@@ -68,6 +89,7 @@ figcaption {
 	margin: 0 auto;
 	color: white;
 	text-align: center;
+	padding: 5px;
 }
 
 h1{
@@ -76,6 +98,7 @@ h1{
 
 h2 {
 	font-family: 'Alegreya Sans SC', sans-serif;
+	padding: 15px;
 }
 
 h3 {
@@ -96,9 +119,9 @@ article {
 	color: white;
 }
 
-img {
+/*img {
 	max-width: 100%;
-}
+}*/
 
 .clearfix:after{
 	height: 0;
@@ -139,9 +162,43 @@ img {
 	margin: 0 15px;
 }
 
-.blackandwhite {
-	max-width: 25%;
-	max-height: 25%;
+.email {
+	padding-top: 25px;
+}
+
+.pics{
+	padding-top: 0;
+}
+
+.photo{
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	width: 25%;
+}
+
+.square {
+	height: 630px;
+}
+
+.long{
+	height: 960px;
+}
+
+.wide {
+	height: 425px;
+}
+
+.exwide {
+	height: 360px;
+}
+
+.tall {
+	height: 850px;
+}
+
+.stack{
+	display: block;
 }
 
 #whoweare {
@@ -178,7 +235,7 @@ img {
 	float: left;
 	display: block;
 	margin: 0 auto;
-	width: 30%;
+	width: 45%;
 	padding: 0 5% 0 15%; 
 }
 
@@ -186,7 +243,7 @@ img {
 	float: right;
 	display: block;
 	margin: 0 auto;
-	width: 30%;
+	width: 45%;
 	padding: 0 15% 0 5%; 
 }
 
