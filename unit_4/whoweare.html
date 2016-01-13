@@ -4,15 +4,24 @@
 	<title>AlpenCreative</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body id="whoweare">
 	<header class="clearfix">
 		<a href="index.html"><img id="navlogo" src="./images/AlpenCreativeGeoLogo_Color_v2.svg" alt="Alpen Creative Logo" title="Alpen Creative Logo"></a>
-		<nav>	
+		<nav class="desktop">	
 			<a class="navlinks" href="video.html">Video</a>
 			<a class="navlinks" href="photography.html">Photography</a>
 			<a class="navlinks" href="whoweare.html">Who We Are</a>
 		</nav>
+		<nav class="mobile">
+  			<button>Toggle</button>
+  				<div>
+    				<a href="whoweare.html">Who We Are</a>
+					<a href="photography.html">Photography</a>
+   					<a href="video.html">Video</a>
+  				</div>
+</nav>
 	</header>
 
 	<section>
@@ -22,14 +31,14 @@
 		</article>
 
 		<div class="clearfix" id="bio">
-			<figure id="hazen" >
-				<img src="./images/hazen.jpg" alt="Picture of Hazen Woolson" title="Hazen Woolson">
+			<figure id="hazen">
+				<img id="hazepic" src="./images/hazen.jpg" alt="Picture of Hazen Woolson" title="Hazen Woolson">
 				<figcaption><h2>Hazen Woolson</h2>With over 10 years of experience in video, a degree in computer science and a critical eye for detail, Hazen is capable of constructing just about anything in the digital realm. The endless beauty of the Sierra and a little coffee lends a unique perspective to his creative work.
 				<a class="email" href="mailto:hazen@alpencreative.com">hazen@alpencreative.com</a>
 				</figcaption>
 			</figure>	
 			<figure id="katie" >
-				<img src="./images/katie.jpg" alt="Picture of Katie Harroun" title="Katie Harroun">
+				<img id="katiepic" src="./images/katie.jpg" alt="Picture of Katie Harroun" title="Katie Harroun">
 				<figcaption><h2>Katie Harroun</h2>Originating from Florida, Katie mader her way west in 2012 and has fully embaced the mountain lifestyle. After studying Television Production in college, she worked in various roles including Documentary Film for CNN, Marketing for Vail Corporation, and Sports Broadcasting for an ESPN affiliate. She has an eye for finding the beauty in any shot, from still photography to videography, and the brain for branding from restaurants to sports shops.
 				<a class="email" href="mailto:katie@alpencreative.com">katie@alpencreative.com</a>
 				</figcaption>
@@ -41,12 +50,7 @@
 		<a class="socmedia" href="https://www.instagram.com/alpen_creative/" target="_blank"><img src="images/instagram_logo.png" alt="Instagram Logo" title="Instagram Logo"></a>
 		<a class="socmedia" href="https://vimeo.com/home/myvideos" target="_blank"><img src="images/vimeo-4-xxl.png" alt="Vimeo Logo" title="Vimeo Logo"></a>
 		<a class="socmedia" href="#" target="_blank"><img src="images/icon-contact-form.png" alt="Email Logo" title="Email Logo"></a>
-		<a class="socmedia" href="#" target="_blank"><img src="images/phone-call-icon.png" alt="Phone" title="Phone Logo"></a>
-		<nav id="footcontact">
-			<h3>Contact Us</h3>
-			<a class="contact" href="mailto:katie@alpencreative.com">katie@alpencreative.com</a>
-			<a class="contact" href="mailto:katie@alpencreative.com">hazen@alpencreative.com</a>
-		</nav>	
+		<a class="socmedia" href="#" target="_blank"><img src="images/phone-call-icon.png" alt="Phone" title="Phone Logo"></a>	
 	</footer>
 </body>
 </html>
