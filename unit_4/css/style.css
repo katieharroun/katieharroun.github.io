@@ -234,6 +234,10 @@ img {
 
 }
 
+.hkcontact{
+	margin: 50px 0;
+}
+
 #whoweare {
 	background: url(../images/backgroundmilkyway.jpg);
 	background-size: cover;
@@ -299,6 +303,14 @@ img {
 
 #photopage{
 	background-color: #54504D;
+}
+
+#contactpage{
+	background: url(../images/backgroundmilkyway.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	font-size: 20px;
 }
 
 
