@@ -21,6 +21,7 @@ body {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	min-height: 100vh;
+	font-size: 15px;
 }
 
 header {
@@ -47,7 +48,7 @@ section {
 p {
 	font-family: 'Alegreya Sans SC', sans-serif;
 	color: #000;
-	font-size: 25px;
+	font-size: 1.6em;
 	padding: 0 13%; 
 	letter-spacing: 2px;
 	line-height: 1.5em;
@@ -71,6 +72,7 @@ footer {
 	bottom:0;
 	left:0;
 	clear: both;
+	position: absolute;
 }
 
 figure {
@@ -83,7 +85,7 @@ figure {
 
 figcaption {
 	font-family: 'Josefin Slab', serif;
-	font-size: 1.5em;
+	font-size: 1.6em;
 	max-width: 800px;
 	margin: 0 auto;
 	color: white;
@@ -114,7 +116,7 @@ h4 {
 
 article {
 	text-align: center;
-	font-size: 2.5em;
+	font-size: 1.2em;
 	font-family: 'Josefin Slab', serif;
 	color: white;
 }
@@ -181,6 +183,10 @@ img {
 	float: right;
 }
 
+.longfoot{
+	position: relative;
+}
+
 .socmedia {
 	display: inline;
 	float: left;
@@ -209,15 +215,16 @@ img {
 }
 
 .vidpage{
-	background-color: #54504D;
+	background-color: #78716E;
 }
 
 .vid {
 	float: left;
-	margin: 0 15%;
+	margin: 0 5%;
+	width: 40%;
 }
 
-.vidright{
+.vidp{
 	float: right;
 	width: 30%;
 	margin: 0 10%;
@@ -228,7 +235,7 @@ img {
 }
 
 .vidlink:hover{
-	
+
 }
 
 #whoweare {
@@ -248,7 +255,7 @@ img {
 	color: #41495C;
 	font-weight: thin;
 	text-transform: uppercase;
-	font-size: 50px; 
+	font-size: 3.3em; 
 	font-decoration: underline;
 	margin: 50px auto;
 }
@@ -303,8 +310,21 @@ img {
 }
 
 @media only screen and (max-width: 1300px){
+	body{	
+		font-size: 12px;
+	}
 	.photo{
 		width: 50%;
+	}
+	.vid {
+		float: none;
+		margin: 0 10%;
+		width: 80%;
+	}
+	.vidp{
+		float: none;
+		width: 90%;
+		margin: 0 5%;
 	}
 	#hazen{
 		width: 100%;
@@ -325,8 +345,15 @@ img {
 }
 
 @media only screen and (max-width: 600px){
+	body{
+		font-size: 10px;
+	}
 	.photo{
 		width: 100%;
+	}
+	.vid {
+		width: 100%;
+		margin: 0;
 	}
 	.mobile
     display: block;
