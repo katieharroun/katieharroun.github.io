@@ -306,9 +306,6 @@ img {
 	background-color: #54504D;
 }
 
-@media only screen and (max-width: 1700px){
-
-}
 
 @media only screen and (max-width: 1300px){
 	body{	
@@ -356,8 +353,13 @@ img {
 		width: 100%;
 		margin: 0;
 	}
-	.mobile
-    display: block;
-  	.desktop
-    display: none;
+	.mobile{
+    	display: block;
+    }	
+  	.desktop{
+    	display: none;
+	}
+	footer{
+		position: relative;
+	}
 }
