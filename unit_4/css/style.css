@@ -25,7 +25,7 @@ body {
 }
 
 header {
-	background-color: rgba(237,190,156,.5);
+	background-color: rgba(183, 193, 178, 0.5);
 	max-height: 80px;
 }
 
@@ -67,7 +67,7 @@ a:hover {
 }
 
 footer {
-	background-color: rgba(237,190,156,.5);
+	background-color: rgba(183, 193, 178, 0.5);
 	max-height: 60px;
 	width:100%;
 	bottom:0;
@@ -126,6 +126,15 @@ img {
 	max-width: 100%;
 }
 
+
+figure img {
+	display: block;
+}
+
+label {
+	display: none;
+}
+
 .clearfix:after{
 	height: 0;
 	font-size: 0;
@@ -169,6 +178,13 @@ img {
 	width: 40%;
 }
 
+.line {
+	width: 20px;
+	height: 3px;
+	color: black;
+	background: #000
+	margin: 2px 0;
+}
 
 .navlinks {
 	font-family: 'Alegreya Sans SC', sans-serif;
@@ -200,13 +216,14 @@ img {
 
 .pics{
 	padding-top: 0;
+	margin: 0 .5%;
 }
 
 .photo{
 	margin: 0;
 	padding: 0;
 	display: inline-block;
-	width: 25%;
+	width: 24.9%;
 	height: 100%;
 }
 
@@ -230,12 +247,31 @@ img {
 	width: 100%;
 }
 
-.vidlink:hover{
-
-}
-
 .hkcontact{
 	margin: 50px 0;
+}
+
+.vidthumb{
+	position: relative;
+	width: 350px;
+	background-color: red;
+	overflow: hidden;
+}
+
+.viewvid{
+	text-decoration: none;
+	position: absolute;
+	background-color: rgba(0, 0, 0, .5);
+	padding: 25.5% 0;
+	width: 100%;
+	top: 0;
+	text-align: center;
+	opacity: 0;
+	transition: opacity ease .4s;
+}
+
+.vidlink:hover figcaption{
+	opacity: 1;
 }
 
 #whoweare {
@@ -313,6 +349,14 @@ img {
 	font-size: 20px;
 }
 
+#toggle {
+	display: none;
+}
+
+#white {
+	color: rgb(234, 254, 255);
+}
+
 
 @media only screen and (max-width: 1300px){
 	body{	
@@ -353,8 +397,17 @@ img {
 	body{
 		font-size: 10px;
 	}
+
+	label {
+		display: block;
+	}
+
+	nav {
+		display: none;
+	}
+
 	footer{
-		position: relative;
+		position: absolute;
 	}
 	.socmedia{
 		margin: 10px 5px;
@@ -372,7 +425,12 @@ img {
   	.desktop{
     	display: none;
 	}
-	.logo{
-		display: none;
+
+	#toggle: checked + nav {	
+		display: block;
+	}
+
+	#white {
+		color: #000000;
 	}
 }
