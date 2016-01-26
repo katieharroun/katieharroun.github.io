@@ -25,7 +25,7 @@ body {
 }
 
 header {
-	background-color: rgba(183, 193, 178, 0.5);
+	background-color: rgba(255, 255, 216, 0.5);
 	max-height: 80px;
 }
 
@@ -57,17 +57,16 @@ p {
 }
 
 a {
-	color: #70B1B2;
+	color: rgb(71,78,79);
 	display: block;
 }
 
 a:hover {
 	color: rgb(71,78,79);
-	text-transform: uppercase;
 }
 
 footer {
-	background-color: rgba(183, 193, 178, 0.5);
+	background-color: rgba(255, 255, 216, 0.5);
 	max-height: 60px;
 	width:100%;
 	bottom:0;
@@ -109,7 +108,7 @@ h3 {
 }
 
 h4 {
-	color:	white;
+	color:	black;
 	text-align: center;
 	font-size: 4em;
 	margin: 0 auto;
@@ -181,7 +180,6 @@ label {
 .line {
 	width: 20px;
 	height: 3px;
-	color: black;
 	background: #000
 	margin: 2px 0;
 }
@@ -275,7 +273,7 @@ label {
 }
 
 #whoweare {
-	background: url(../images/backgroundmilkyway.jpg);
+	background: url(../images/background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -328,7 +326,7 @@ label {
 
 #pbio {
 	font-family: 'Josefin Slab', serif;
-	color: white;
+	color: #000000;
 	margin: 0;
 }
 
@@ -402,13 +400,14 @@ label {
 		display: block;
 	}
 
-	nav {
-		display: none;
-	}
-
 	footer{
 		position: absolute;
 	}
+
+	.navlinks{
+		display: none;
+	}
+
 	.socmedia{
 		margin: 10px 5px;
 	}
@@ -419,14 +418,8 @@ label {
 		width: 100%;
 		margin: 0;
 	}
-	.mobile{
-    	display: block;
-    }	
-  	.desktop{
-    	display: none;
-	}
 
-	#toggle: checked + nav {	
+	#toggle:checked + nav {	
 		display: block;
 	}
 
