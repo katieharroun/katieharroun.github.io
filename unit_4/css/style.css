@@ -26,11 +26,13 @@ body {
 
 header {
 	background-color: rgba(255, 255, 216, 0.5);
-	max-height: 80px;
+	height: 80px;
 }
 
 nav {
-	float: right;
+	/*float: right;*/
+/*	position:fixed;*/
+	right:0;
 	display: block;
 	font-size: 20px;
 }
@@ -143,7 +145,7 @@ label {
 	clear: both;
 }
 
-.mobile{
+/*.mobile{
   display: none;
   position: fixed;
   width: 100%;
@@ -164,12 +166,11 @@ label {
     width: 30px;
     height: 30px;
     outline: none;
-    transition: all 400ms ease;
-    &.expanded
+    transition: all .4s ease;
       transform: rotate(90deg);
       background-color: transparent;
       border: 0;
-}      
+}      */
 
 .logo {
 	display: block;
@@ -180,13 +181,13 @@ label {
 .line {
 	width: 20px;
 	height: 3px;
-	background: #000
+	background: #000;
 	margin: 2px 0;
 }
 
 .navlinks {
 	font-family: 'Alegreya Sans SC', sans-serif;
-	position: fixed, 100%;
+	/*position: fixed, 100%;*/
 	margin: 30px;
 	padding: 0;
 	text-align: center;	
@@ -210,6 +211,8 @@ label {
 
 .email {
 	padding-top: 25px;
+	color:	#EDBE9C;
+	background-color: rgba(255, 255, 216, 0.5);
 }
 
 .pics{
@@ -254,6 +257,10 @@ label {
 	width: 350px;
 	background-color: red;
 	overflow: hidden;
+}
+
+.vidpics {
+	margin: 0 0;
 }
 
 .viewvid{
@@ -398,14 +405,30 @@ label {
 
 	label {
 		display: block;
+		/*width:20px;
+		margin:auto;*/
+		float:right;
 	}
 
 	footer{
 		position: absolute;
 	}
 
-	.navlinks{
+	nav{
 		display: none;
+		position:static;
+		clear:both;
+		/*float: none;*/
+	}
+
+	header{
+		height:auto;
+		padding:20px;
+	}
+
+	.navlinks{
+		float:none;
+		display:block;
 	}
 
 	.socmedia{
@@ -426,4 +449,9 @@ label {
 	#white {
 		color: #000000;
 	}
+
+/*	#navlogo{
+		float:none;
+		margin:0;
+	}*/
 }

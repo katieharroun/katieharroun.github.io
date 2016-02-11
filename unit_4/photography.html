@@ -5,165 +5,190 @@
 	<link rel="icon" href="images/acicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<script src="jquery.js"></script>
+	<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+	<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
 </head>
 <body id="photopage">
 	<header class="clearfix">
 		<a href="index.html"><img id="navlogo" src="./images/smllogo.svg" alt="Alpen Creative Logo" title="Alpen Creative Logo"></a>
-		<nav class="desktop">	
+		<label for="toggle">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</label>
+		<input type="checkbox" id="toggle">	
+		<nav class="clearfix">
 			<a class="navlinks" href="video.html">Video</a>
 			<a class="navlinks" href="photography.html">Photography</a>
 			<a class="navlinks" href="whoweare.html">Who We Are</a>
 		</nav>
-			<nav class="mobile">
-  			<button>Toggle</button>
-  				<div>
-    				<a href="whoweare.html">Who We Are</a>
-					<a href="photography.html">Photography</a>
-   					<a href="video.html">Video</a>
-  				</div>
-		</nav>
 	</header>
 	<section class="clearfix pics">
+		<script type="text/javascript">
+			$(document).ready(function() {
+			$(".fancybox").fancybox({
+				helpers : {
+        			overlay : {
+            			css : {
+               			 'background' : 'rgba(58, 42, 45, 0.95)'
+           				 }
+       				 }
+  				  }
+			});
+			});
+		</script>
+
+		
 		<figure class="photo">
-			<img src="./images/bwclouds.jpg" alt="Black and White Clouds" title="Clouds">
+			<a class="fancybox" rel="group" href="images/largerimages/milkyway1lrg.jpeg"><img src="./images/milkyway1.jpeg" alt="Milkyway Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/katiekathleenlrg.jpg"><img src="./images/katiekathleen.jpg" alt="Girls on Granite Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/kitelrg.JPG"><img src="./images/kite.jpg" alt="Beach Kite Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/phippslakesunset2lrg.jpg"><img src="./images/phippslakesunset2.jpg" alt="Phipps Lake Sunset"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/Venisonlrg.jpg"><img src="images/venison.jpg" alt="Christy Hill Veison"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/tahoesunsetlrg.jpg"><img src="./images/tahoesunset.jpg" alt="Tahoe Sunset Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/MtRoseNewSnowlrg.jpg"><img src="images/MtRoseNewSnow.jpg" alt="Aerial shot of Mnt Rose"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/halfdomelrg.jpg"><img src="./images/halfdome.jpg" alt="Yosemite Half Dome Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/fountainhouseaeriallrg.jpg"><img src="images/fountainhouseaerial.jpg" alt="Aerial shot of trees"/></a>
 		</figure>	
 		<figure class="photo">
-			<img src="./images/archabstract.jpg" alt="Arches National park Picture" title="Arches National Park">
-		</figure>
-		<figure class="photo">
-			<img src="./images/bwtrain.jpg" alt="Black and White Train" title="Train">
-		</figure>
-		<figure class="photo">
-			<img src="./images/hills.jpg" alt="Utah Hills Picture" title="Utah Hills">
-		</figure>
-		<figure class="photo">
-			<img src="./images/bwbeach.jpg" alt="Oregon Beach Picture" title="Oregon Beach">
-		</figure>			
-		<figure class="photo">
-			<img src="./images/deckcherryblossoms.jpg" alt="Cherry Blossoms Picture" title="Cherry Blossoms on lake Tahoe">
-		</figure>
-		<figure class="photo">
-			<img src="./images/sunsetrocks.jpg" alt="Susnset Rocks Picture" title="Sunset in Desolation Wilderness">
-		</figure>
-		<figure class="photo">
-			<img src="./images/milkyway3.jpeg" alt="Milkyway" title="Milkyway">
+			<a class="fancybox" rel="group" href="images/largerimages/donnerlakelrg.jpg"><img src="./images/donnerlake.jpg" alt="Donner Lake Mist Picture"/></a>
 		</figure>	
 		<figure class="photo">
-			<img src="./images/utahriver.jpg" alt="Utah River Picture" title="Utah Canyon">
+			<a class="fancybox" rel="group" href="images/largerimages/goldenfieldslrg.jpg"><img src="./images/goldenfields.jpg" alt="Girls in a Golden Field Picture"/></a>
 		</figure>
 		<figure class="photo">
-			<img src="./images/frost.jpg" alt="Frost Picture" title="Winter Frost">
+			<a class="fancybox" rel="group" href="images/largerimages/gnocchilrg.jpg"><img src="./images/gnocchi.jpg" alt="Christy Hill Food"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/jpgranttourlrg.jpg"><img src="./images/jpgranttour.jpg" alt="Winter Tour Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/SpringDecklrg.jpg"><img src="images/SpringDeck.jpg" alt="Christy Hill Spring Deck"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/silhouetteslrg.jpg"><img src="./images/silhouettes.jpg" alt="Silhouettes Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/washwoodslrg.jpg"><img src="./images/washwoods.jpg" alt="Washington Woods"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/milkywaylrg.jpg"><img src="./images/milkyway.jpg" alt="Milky Way Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/RoeroArneislrg.jpg"><img src="images/RoeroArneis.jpg" alt="Christy Hill Wines"/></a>
 		</figure>	
 		<figure class="photo">
-			<img src="./images/capitolreefredhills.jpg" alt="Capitol Reef Utah Picture" title="Capitol Reef Utah">
+			<a class="fancybox" rel="group" href="images/largerimages/PorkTrotterRilleteslrg.jpg"><img src="images/PorkTrotterRilletes.jpg" alt="Christy Hill Pork Rilletes"/></a>
 		</figure>
 		<figure class="photo">
-			<img src="./images/fourthofjulylakealpenglow.jpg" alt="Sunset Picture" title="Fourth of July Lake Sunset">
+			<a class="fancybox" rel="group" href="images/largerimages/SignCherryBlossomslrg.jpg"><img src="images/SignCherryBlossoms.jpg" alt="Christy Hill Cherry Blossoms"/></a>
 		</figure>
 		<figure class="photo">
-			<img src="./images/bwtrees.jpg" alt="Black and White Trees" title="Trees">
+			<a class="fancybox" rel="group" href="images/largerimages/boatsunsetlrg.jpg"><img src="./images/boatsunset.jpg" alt="Lake Tahoe Sunset Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/MarchCodlrg.jpg"><img src="images/MarchCod.jpg" alt="Christy Hill Cod"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/SandBarWineslrg.jpg"><img src="images/SandBarWines.jpg" alt="Wines"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/hoodstormlrg.jpg"><img src="./images/hoodstorm.jpg" alt="Mnt Hood Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/bwcloudslrg.JPG"><img src="./images/bwclouds.jpg" alt="Black and White Clouds"/></a>
 		</figure>	
 		<figure class="photo">
-			<img src="./images/utahbark.jpg" alt="Utah Desert Picture" title="Utah Desert">
-		</figure>
-		<figure class="photo">
-			<img src="./images/road.jpg" alt="Road Picture" title="On The Road">
-		</figure>
-		<figure class="photo">
-			<img src="./images/oregonwaterfall.jpg" alt="Oregon Waterfall Picture" title="Oregon Waterfall">
-		</figure>
-		<figure class="photo">
-			<img src="./images/milkyway2.jpeg" alt="Milkyway Picture" title="Milky Way">
-		</figure>
-		<figure class="photo">
-			<img src="./images/phippslakesunset.jpg" alt="Phipps Lake Sunset" title="Phipps Lake Sunset">
-		</figure>
-		<figure class="photo">
-			<img src="./images/girlshikingout.jpg" alt="Backpacking Picture" title="Backpacking">
-		</figure>
-		<figure class="photo">
-			<img src="./images/milkyway1.jpeg" alt="Milkyway Picture" title="Milky Way">
-		</figure>
-		<figure class="photo">
-			<img src="./images/kite.jpg" alt="Beach Kite Picture" title="Oregon Beach Kite">
-		</figure>
-		<figure class="photo">
-			<img src="./images/katiekathleen.jpg" alt="Girls on Granite Picture" title="Girls On Granite">
-		</figure>
-		<figure class="photo">
-			<img src="./images/phippslakesunset2.jpg" alt="Phipps Lake Sunset" title="Phipps Lake Sunset">
-		</figure>
-		<figure class="photo">
-			<img src="images/venison.jpg" alt="Christy Hill Veison" title="Christy Hill Veison">
-		</figure>		
-		<figure class="photo">
-			<img src="./images/tahoesunset.jpg" alt="Tahoe Sunset Picture" title="Tahoe Sunset">
-		</figure>
-		<figure class="photo">
-			<img src="images/MtRoseNewSnow.jpg" alt="Aerial shot of Mnt Rose" title="Aerial Mnt Rose">
+			<a class="fancybox" rel="group" href="images/largerimages/archabstractlrg.jpg"><img src="./images/archabstract.jpg" alt="Arches National park Picture"/></a>
 		</figure>	
 		<figure class="photo">
-			<img src="./images/halfdome.jpg" alt="Yosemite Half Dome Picture" title="Yosemite Half Dome">
-		</figure>
-		<figure class="photo">
-			<img src="images/fountainhouseaerial.jpg" alt="Aerial shot of trees" title="Aerial Trees">
+			<a class="fancybox" rel="group" href="images/largerimages/bwtrainlrg.JPG"><img src="./images/bwtrain.jpg" alt="Black and White Train"/></a>
 		</figure>	
 		<figure class="photo">
-			<img src="./images/donnerlake.jpg" alt="Donner Lake Mist Picture" title="Donner Lake Mist">
+			<a class="fancybox" rel="group" href="images/largerimages/hillslrg.jpg"><img src="./images/hills.jpg" alt="Utah Hills Picture"/></a>
 		</figure>
 		<figure class="photo">
-			<img src="./images/goldenfields.jpg" alt="Girls in a Golden Field Picture" title="Girls in a Golden Field">
+			<a class="fancybox" rel="group" href="images/largerimages/bwbeachlrg.JPG"><img src="./images/bwbeach.jpg" alt="Oregon Beach Picture"/></a>
 		</figure>
 		<figure class="photo">
-			<img src="./images/gnocchi.jpg" alt="Christy Hill Food" title="Gnocchi From Chrity Hill">
+			<a class="fancybox" rel="group" href="images/largerimages/deckcherryblossomslrg.jpg"><img src="./images/deckcherryblossoms.jpg" alt="Cherry Blossoms Picture"/></a>
 		</figure>
 		<figure class="photo">
-			<img src="./images/jpgranttour.jpg" alt="Winter Tour Picture" title="Sierra Backcountry">
+			<a class="fancybox" rel="group" href="images/largerimages/sunsetrockslrg.jpg"><img src="./images/sunsetrocks.jpg" alt="Susnset Rocks Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/milkyway3lrg.jpeg"><img src="./images/milkyway3.jpeg" alt="Milkyway"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/utahriverlrg.jpg"><img src="./images/utahriver.jpg" alt="Utah River Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/frostlrg.JPG"><img src="./images/frost.jpg" alt="Frost Picture"/></a>
 		</figure>	
 		<figure class="photo">
-			<img src="images/SpringDeck.jpg" alt="Christy Hill Spring Deck" title="Christy Hill Spring Deck">
+			<a class="fancybox" rel="group" href="images/largerimages/capitolreefredhillslrg.jpg"><img src="./images/capitolreefredhills.jpg" alt="Capitol Reef Utah Picture"/></a>
 		</figure>	
 		<figure class="photo">
-			<img src="./images/silhouettes.jpg" alt="Silhouettes Picture" title="Silhouettes">
-		</figure>		
+			<a class="fancybox" rel="group" href="images/largerimages/fourthofjulylakealpenglowlrg.jpg"><img src="./images/fourthofjulylakealpenglow.jpg" alt="Sunset Picture"/></a>
+		</figure>
 		<figure class="photo">
-			<img src="./images/washwoods.jpg" alt="Washington Woods" title="Washington Woods">
+			<a class="fancybox" rel="group" href="images/largerimages/bwtreeslrg.JPG"><img src="./images/bwtrees.jpg" alt="Black and White Trees"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/utahbarklrg.jpg"><img src="./images/utahbark.jpg" alt="Utah Desert Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/roadlrg.jpg"><img src="./images/road.jpg" alt="Road Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/sunsetrockslrg.jpg"><img src="./images/sunsetrocks.jpg" alt="Susnset Rocks Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/oregonwaterfalllrg.jpg"><img src="./images/oregonwaterfall.jpg" alt="Oregon Waterfall Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/milkyway2lrg.jpeg"><img src="./images/milkyway2.jpeg" alt="Milkyway Picture"/></a>
+		</figure>
+		<figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/phippslakesunsetlrg.jpg"><img src="./images/phippslakesunset.jpg" alt="Phipps Lake Sunset"/></a>
 		</figure>	
 		<figure class="photo">
-			<img src="./images/milkyway.jpg" alt="Milky Way Picture" title="Milky Way">
-		</figure>
-		<figure class="photo">
-			<img src="images/RoeroArneis.jpg" alt="Christy Hill Wines" title="Christy Hill Wines">
-		</figure>
-		<figure class="photo">
-			<img src="images/PorkTrotterRilletes.jpg" alt="Christy Hill Pork Rilletes" title="Christy Hill Pork Rilletes">
+			<a class="fancybox" rel="group" href="images/largerimages/girlshikingoutlrg.jpg"><img src="./images/girlshikingout.jpg" alt="Backpacking Picture"/></a>
 		</figure>	
-		<figure class="photo">
-			<img src="images/SignCherryBlossoms.jpg" alt="Christy Hill Cherry Blossoms" title="Christy Hill Cherry Blossoms">
-		</figure>
-		<figure class="photo">
-			<img src="./images/boatsunset.jpg" alt="Lake Tahoe Sunset Picture" title="Lake Tahoe Sunset">
-		</figure>
-		<figure class="photo">
-			<img src="images/MarchCod.jpg" alt="Christy Hill Cod" title="Christy Hill Cod">
-		</figure>
-		<figure class="photo">
-			<img src="images/SandBarWines.jpg" alt="Wines" title="Christy Hill Wines">
-		</figure>	
-		<figure class="photo">
-			<img src="./images/hoodstorm.jpg" alt="Mnt Hood Picture" title="Mnt. Hood Storm">
-		</figure>
-		<figure class="photo">
-			<img src="images/SandBarOpen.jpg" alt="Christy Hill Sand Bar" title="Christy Hill Sand Bar">
-		</figure>
+		
+		<!-- <figure class="photo">
+			<a class="fancybox" rel="group" href="images/largerimages/SandBarOpenlrg.jpg"><img src="images/SandBarOpen.jpg" alt="Christy Hill Sand Bar"/></a>
+		</figure> -->
 	</section>
 	<footer class="clearfix longfoot">	
 		<a class="socmedia" href="https://www.facebook.com/alpencreative/?ref=hl" target="_blank"><img src="images/facebook1.png" alt="Facebook Logo" title="Facebook Logo"></a>
 		<a class="socmedia" href="https://www.instagram.com/alpen_creative/" target="_blank"><img src="images/instagram_logo.png" alt="Instagram Logo" title="Instagram Logo"></a>
 		<a class="socmedia" href="https://vimeo.com/alpencreative" target="_blank"><img src="images/vimeo-4-xxl.png" alt="Vimeo Logo" title="Vimeo Logo"></a>
 		<a class="socmedia" href="contact.html" target="_blank"><img src="images/icon-contact-form.png" alt="Email Logo" title="Email Logo"></a>
-		<!-- <a class="socmedia" href="contact.html" target="_blank"><img src="images/phone-call-icon.png" alt="Phone" title="Phone Logo"></a> -->
 	</footer>	
 </body>
 </html>	
