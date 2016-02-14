@@ -25,8 +25,8 @@ body {
 }
 
 header {
-	background-color: rgba(255, 255, 216, 0.5);
-	height: 80px;
+	background-color: rgba(255, 255, 255, 1);
+	/*height: 80px;*/
 }
 
 nav {
@@ -62,13 +62,13 @@ a {
 	color: rgb(71,78,79);
 	display: block;
 }
-
-a:hover {
-	color: rgb(71,78,79);
+a.navlinks:hover {
+	background-color: #efefef;
+	/*color: rgb(71,78,79);*/
 }
 
 footer {
-	background-color: rgba(255, 255, 216, 0.5);
+	background-color: rgba(255, 255, 255, 1);
 	max-height: 60px;
 	width:100%;
 	bottom:0;
@@ -80,7 +80,7 @@ footer {
 figure {
 	display: inline;
 	float: left;
-	margin: 50px auto;
+	/*margin: 50px auto;*/
 	width: 45%;
 
 }
@@ -110,10 +110,10 @@ h3 {
 }
 
 h4 {
-	color:	black;
+	color:	#222;
 	text-align: center;
 	font-size: 4em;
-	margin: 0 auto;
+	margin: 30px;
 }
 
 article {
@@ -131,27 +131,34 @@ img {
 figure img {
 	display: block;
 	margin: 0 auto;
-	padding-top: 30px;
+	/*padding-top: 30px;*/
 }
 
 label {
 	display: none;
 }
-
+span {
+	font-family: 'Alegreya Sans SC', sans-serif;
+}
+hr {
+	width: 300px;
+	height: 2px;
+	margin: 0 auto;
+}
 video#bgvid { 
     position: fixed;
-    top: 50%;
-    left: 50%;
     min-width: 100%;
     min-height: 100%;
     width: auto;
     height: auto;
     z-index: -100;
+    top: 50%;
+    left: 50%;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(../images/bgreelpic) no-repeat;
+    background: url(../images/bgreelpic.png) no-repeat;
     background-size: cover; 
 }
 
@@ -193,8 +200,16 @@ video#bgvid {
 
 .logo {
 	display: block;
-	margin: 0 auto;
-	width: 40%;
+	margin: 150px auto;
+	width: 30%;
+}
+
+.homewords {
+	color: #333;
+	font-size: 1.8em;
+	margin: 100px 0;
+	width: 60%;
+	display: inline-block;
 }
 
 .line {
@@ -207,13 +222,12 @@ video#bgvid {
 .navlinks {
 	font-family: 'Alegreya Sans SC', sans-serif;
 	/*position: fixed, 100%;*/
-	margin: 30px;
-	padding: 0;
+	padding: 16px;
 	text-align: center;	
 	list-style-type: none;
-	color: #fff;
+	color: #333;
 	font-weight: bolder;
-	font-style: italic;
+	/*font-style: italic;*/
 	text-decoration: none;
 	float: right;
 }
@@ -247,7 +261,11 @@ video#bgvid {
 }
 
 .vidpage{
-	background-color: #78716E;
+
+}
+
+.vidlayer{
+
 }
 
 .vid {
@@ -275,9 +293,13 @@ video#bgvid {
 }
 
 .vidlink {
-	width: 100%;
+	/*width: 100%;*/
+	display: inline-block;
+	margin: 50px 0;
 }
-
+.vidlink:hover figcaption{
+	opacity: 1;
+}
 .hkcontact{
 	margin: 50px 0;
 }
@@ -289,8 +311,14 @@ video#bgvid {
 	overflow: hidden;
 }
 
+.videos {
+	background-color: white;
+	margin: 0 auto;
+}
 .vidpics {
-	margin: 350px 15% 800px;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
 }
 
 .viewvid{
@@ -305,24 +333,74 @@ video#bgvid {
 	transition: opacity ease .4s;
 }
 
-.vidlink:hover figcaption{
-	opacity: 1;
-}
 
 .foothome{
-	position: absolute;
+	/*position: absolute;*/
 }
-
+#wearediv {
+	background-color: white;
+	padding: 100px;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 60%;
+}
 #whoweare {
 	background: url(../images/largerimages/roadlrg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+#logobg {
+	background: url(../images/background.jpg);
+	background-size: cover;   
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 800px;
+	-webkit-transition: all ease;
+	-o-transition: all ease;
+	-moz-transition: all ease;
+	transition: all ease; 
+}
+#logofg {
+	background-attachment: fixed;
+	-webkit-transition: all ease;
+	-o-transition: all ease;
+	-moz-transition: all ease;
+	transition: all ease; 
+}
+
+#byline {
+	margin: 0 auto;
+	background-color: white;
+}
+
 #navlogo {
 	float: left;
-	padding: 10px 0 10px 10px;
-	width: 100px;
+	padding: 10px 0 10px 0;
+	width: 50px;
+	margin: 0 15px;
+}
+#timelapsebg {
+	background: url("../images/backgroundmonolake.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 800px;
+	-webkit-transition: all ease;
+	-o-transition: all ease;
+	-moz-transition: all ease;
+	transition: all ease; 
+}
+#thirdpanel { 
+	background: url("../images/backgroundmonolake.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 800px;
+	-webkit-transition: all ease;
+	-o-transition: all ease;
+	-moz-transition: all ease;
+	transition: all ease; 
 }
 
 #slogan {
@@ -336,9 +414,6 @@ video#bgvid {
 }
 
 #home {
-	background: url(../images/background.jpg);
-	background-size: cover;   
-	background-repeat: no-repeat;
 	text-align: center;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	margin:	0;
@@ -373,8 +448,8 @@ video#bgvid {
 
 #pbio {
 	font-family: 'Josefin Slab', serif;
-	color: #000000;
-	margin: 0;
+	color: #222;
+	margin-top: 30px;
 }
 
 #bio {
@@ -397,16 +472,24 @@ video#bgvid {
 #toggle {
 	display: none;
 }
-
-#white {
-	color: rgb(234, 254, 255);
+#transform {
+	font-family: 'Josefin Slab', serif;
+	color: #41495C;
+	font-weight: thin;/*
+	text-transform: uppercase;*/
+	font-size: 3.3em; 
+	font-decoration: underline;
+	margin: 200px auto;
+	padding: 40px;
+	width: 50%;
+	background-color: rgba(255,255,255,.7);
 }
 
 #vidwords {
 	background-color: rgba(175, 175, 175, 0.91);
 	color:	#C1E2D7;
 	width: 60%;
-	margin:	200px 0 300px 35%;
+	margin:	200px 0 400px 35%;
 	font-size: 5.5em;
 	font-family: 'Alegreya Sans SC', sans-serif;
 }
