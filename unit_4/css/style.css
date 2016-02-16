@@ -253,12 +253,8 @@ video#tlvid {
 	margin
 }
 
-.vidpage{
-
-}
-
-.vidlayer{
-
+.vidp p {
+	margin-bottom: 50px;
 }
 
 .vid {
@@ -310,7 +306,7 @@ video#tlvid {
 }
 .vidpics {
 	text-align: center;
-	width: 80%;
+	/*width: 80%;*/
 	margin: 0 auto;
 }
 
@@ -325,7 +321,20 @@ video#tlvid {
 	opacity: 0;
 	transition: opacity ease .4s;
 }
-
+.vidback {	
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-align: center;	
+	list-style-type: none;
+	font-weight: bolder;
+	font-size: 1.5em;
+	text-decoration: none;
+	margin-bottom: 50px;
+	display: inline;
+	color: #E8674F;
+}
+a.vidback:hover {
+	color: #044B57;
+}
 .stickyfoot{
 	position: absolute;
 }
@@ -383,7 +392,7 @@ video#tlvid {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 900px;
+	height: 500px;
 	-webkit-transition: all ease;
 	-o-transition: all ease;
 	-moz-transition: all ease;
@@ -395,7 +404,7 @@ video#tlvid {
 	background-size: cover;
 	background-position: 50% 50%;
 	background-attachment: fixed;
-	height: 900px;
+	height: 800px;
 	text-align: center;
 	-webkit-transition: all ease;
 	-o-transition: all ease;
@@ -436,20 +445,12 @@ a.learnmore {
     background-color: rgba(255, 255, 255, 0.6);
 }
 
-#katie{
+#katie {
 	float: right;
 	display: inline;
 	margin: 0 15% 0 2%;
 	width: 33%;
 	background-color: rgba(255, 255, 255, 0.6);
-}
-
-/*#hazspace {
-	padding-bottom: 140px;
-}*/
-
-#hazspace {
-	padding-bottom: 140px;
 }
 
 #contactac {
@@ -573,7 +574,7 @@ a.learnmore {
 	}
 	#secondpanel {
 		background: url("../images/backgroundmonolake.jpg");
-		height: 700px;
+		height: 500px;
 	}
 	#wearediv {
 		width: 80%;
@@ -583,11 +584,6 @@ a.learnmore {
 		padding: 0;
 		margin: 0 10%;
 		margin-bottom: 100px;
-	}
-	/*#hazspace {
-		padding-bottom: 0px; 
-	}*/
-
 	}
 	#hazspace {
 		padding-bottom: 0px; 
@@ -616,9 +612,8 @@ a.learnmore {
 
 	label {
 		display: block;
-		/*width:20px;
-		margin:auto;*/
 		float:right;
+		padding: 15px;
 	}
 
 	footer{
@@ -634,7 +629,7 @@ a.learnmore {
 
 	header{
 		height:auto;
-		padding:20px;
+		padding: 0;
 	}
 	hr {
 		width: 60%;
@@ -684,6 +679,22 @@ a.learnmore {
 		width: 100%;
 	}
 
+	.vid iframe {
+		margin: 0;
+		width: 100%;
+		height: 100%;
+	}
+	.vidp img {
+		width: 50%;
+		margin: 20px 0;
+	}
+	.vidp p {
+		padding: 0 5%;
+	}
+	.stickyfoot {
+		position: relative;
+	}
+
 	#toggle:checked + nav {	
 		display: block;
 	}
@@ -700,13 +711,6 @@ a.learnmore {
 		letter-spacing: 0px;
 		line-height: 1em;
 		font-size: 1.4em;
-	}
-	#hazen {
-		float: none;
-	    display: inline;
-	    margin: 0 auto;
-	    width: 100%;
-	    background-color: rgba(255, 255, 255, 0.8);
 	}
 	#contactac {
 		margin-top: 60px;
