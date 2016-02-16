@@ -534,7 +534,7 @@ a.learnmore {
 	}
 }
 
-@media only screen and (min-width: 2000px max-width: 2600px) {
+@media only screen and (min-width: 2000px) {
 	#logobg {
 		height: 1200px;
 	}
@@ -714,9 +714,11 @@ a.learnmore {
 	#bumpfoot {
 		position: relative;
 	}
-
-/*	#navlogo{
-		float:none;
-		margin:0;
-	}*/
+	#thirdpanel {
+		height: 800px;
+		background-attachment: none;
+	}
+	#transform{
+		width: 75%;
+	}
 }
