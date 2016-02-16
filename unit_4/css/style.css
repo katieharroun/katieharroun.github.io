@@ -186,33 +186,6 @@ video#tlvid {
 	clear: both;
 }
 
-/*.mobile{
-  display: none;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  div
-    display: none;
-  button
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    border: 0;
-    text-indent: 200%;
-    overflow: hidden;
-    background: rgba(255,255,255,.8) url(http://i.imgur.com/vKRaKDX.png) center no-repeat;
-    border: 1px solid #ddd;
-    border-radius: 3px;
-    background-size: 80%;
-    width: 30px;
-    height: 30px;
-    outline: none;
-    transition: all .4s ease;
-      transform: rotate(90deg);
-      background-color: transparent;
-      border: 0;
-}      */
-
 .logo {
 	display: block;
 	margin: 120px auto;
@@ -353,8 +326,6 @@ video#tlvid {
 	transition: opacity ease .4s;
 }
 
-
-<<<<<<< HEAD
 .stickyfoot{
 	position: absolute;
 }
@@ -365,7 +336,7 @@ video#tlvid {
 	margin-top: 100px;
 	width: 70%;
 }
-=======
+
 .foothome{
 	/*position: absolute;*/
 }
@@ -376,7 +347,7 @@ video#tlvid {
 	margin-top: 100px;
 	width: 70%;
 }
->>>>>>> origin/master
+
 #whoweare {
 	background: url(../images/largerimages/roadlrg.jpg);
 	background-size: cover;
@@ -473,15 +444,14 @@ a.learnmore {
 	background-color: rgba(255, 255, 255, 0.6);
 }
 
-<<<<<<< HEAD
 /*#hazspace {
 	padding-bottom: 140px;
 }*/
-=======
+
 #hazspace {
 	padding-bottom: 140px;
 }
->>>>>>> origin/master
+
 #contactac {
 	margin-top: 100px;
 }
@@ -613,17 +583,16 @@ a.learnmore {
 		padding: 0;
 		margin: 0 10%;
 		margin-bottom: 100px;
-<<<<<<< HEAD
 	}
 	/*#hazspace {
 		padding-bottom: 0px; 
 	}*/
-=======
+
 	}
 	#hazspace {
 		padding-bottom: 0px; 
 	}
->>>>>>> origin/master
+
 	#hazepic {
 		width: 100%;
 	}
