@@ -354,6 +354,7 @@ video#tlvid {
 }
 
 
+<<<<<<< HEAD
 .stickyfoot{
 	position: absolute;
 }
@@ -364,6 +365,18 @@ video#tlvid {
 	margin-top: 100px;
 	width: 70%;
 }
+=======
+.foothome{
+	/*position: absolute;*/
+}
+#wearediv {
+	background-color: rgba(255,255,255,.6);
+	padding: 40px 60px 80px 60px;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 70%;
+}
+>>>>>>> origin/master
 #whoweare {
 	background: url(../images/largerimages/roadlrg.jpg);
 	background-size: cover;
@@ -460,9 +473,15 @@ a.learnmore {
 	background-color: rgba(255, 255, 255, 0.6);
 }
 
+<<<<<<< HEAD
 /*#hazspace {
 	padding-bottom: 140px;
 }*/
+=======
+#hazspace {
+	padding-bottom: 140px;
+}
+>>>>>>> origin/master
 #contactac {
 	margin-top: 100px;
 }
@@ -594,10 +613,17 @@ a.learnmore {
 		padding: 0;
 		margin: 0 10%;
 		margin-bottom: 100px;
+<<<<<<< HEAD
 	}
 	/*#hazspace {
 		padding-bottom: 0px; 
 	}*/
+=======
+	}
+	#hazspace {
+		padding-bottom: 0px; 
+	}
+>>>>>>> origin/master
 	#hazepic {
 		width: 100%;
 	}
