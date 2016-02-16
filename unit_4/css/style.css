@@ -534,7 +534,7 @@ a.learnmore {
 	}
 }
 
-@media only screen and (min-width: 2000px) {
+@media only screen and (min-width: 2000px max-width: 2600px) {
 	#logobg {
 		height: 1200px;
 	}
