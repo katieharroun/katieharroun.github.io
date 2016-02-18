@@ -388,6 +388,17 @@ a.vidback:hover {
 	margin: 0 15px;
 }
 
+#secondpanel {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+	-webkit-transition: all ease;
+	-o-transition: all ease;
+	-moz-transition: all ease;
+	transition: all ease; 
+}
+
 #thirdpanel { 
 	background: url("../images/backgroundmtrose.jpg");
 	background-repeat: no-repeat;
