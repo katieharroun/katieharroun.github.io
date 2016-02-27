@@ -245,7 +245,6 @@ video#tlvid {
 	padding: 0;
 	display: inline-block;
 	width: 24.9%;
-	height: 100%;
 }
 .photocontainer {
 	margin: 25px auto;
@@ -392,7 +391,7 @@ a.vidback:hover {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	height: 500px;
+	height: 800px;
 	-webkit-transition: all ease;
 	-o-transition: all ease;
 	-moz-transition: all ease;
@@ -542,11 +541,11 @@ a.learnmore {
 	}
 }
 
-/*@media only screen and (max-width: 1300px) {
-	#logobg {
-		height: 700px; 
+@media only screen and (max-width: 1700px) {
+	.logo {
+		margin: 50px auto;
 	}
-}*/
+}
 
 @media only screen and (max-width: 1300px){
 	body{	
@@ -627,7 +626,7 @@ a.learnmore {
 		width: 60%;
 	}
 	.logo {
-		width:40%;
+		width:65%;
 		margin: 20px auto;
 	}
 	.homewords {
@@ -714,11 +713,14 @@ a.learnmore {
 		position: relative;
 	}
 	#thirdpanel {
-		height: 800px;
-		background-attachment: none;
+		height: 450px;
+		background-attachment: inherit;
 	}
 	#transform{
 		width: 75%;
+		font-size: 2.5em;
+		margin:	90px auto;
+		padding: 20px;
 	}
 	#bgvid {
 		display: none;
@@ -726,11 +728,15 @@ a.learnmore {
 	}
 	#secondpanel {
 		background: url("../images/backgroundmonolake.jpg");
-		height: 500px;
+		height: 300px;
 		background-size: cover;
     	background-repeat: no-repeat;
 	}
 	#logobg {
+		background: url(../images/backgroundmobile.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
 		height: 300px;
+		/*background-attachment: inherit;*/
 	}
 }
