@@ -115,6 +115,20 @@ h4 {
 	margin: 30px;
 }
 
+h5 {
+	font-family: 'Josefin Slab', serif;
+	font-size: 1.5em;
+	margin: 30px 10%;
+}
+
+h6 {
+	background-color: rgba(232, 103, 79, 0.4);
+	color: #333;
+	font-size: 3em;
+	margin: 104px auto;
+	width: 600px;
+}
+
 article {
 	text-align: center;
 	font-size: 1.1em;
@@ -265,6 +279,10 @@ video#tlvid {
     display: inline-block;
 }
 
+.webd{
+	display: inline-block;
+}
+
 .vid iframe {
 	position: absolute;
 	margin: 60px;
@@ -278,6 +296,10 @@ video#tlvid {
 	float: right;
 	width: 30%;
 	margin: 40px 10%;
+}
+
+.webdivs {
+	margin: 50px auto;
 }
 
 .vidlink {
@@ -453,6 +475,18 @@ a.learnmore {
 	background-color: rgba(255, 255, 255, 0.6);
 }
 
+#webdpage {
+	background: url(../images/tahoesunset.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 500px;
+	-webkit-transition: all ease;
+	-o-transition: all ease;
+	-moz-transition: all ease;
+	transition: all ease; 
+}
+
 #contactac {
 	margin-top: 100px;
 }
@@ -579,7 +613,6 @@ a.learnmore {
 	#hazspace {
 		padding-bottom: 0px; 
 	}
-
 	#hazepic {
 		width: 100%;
 	}
