@@ -662,8 +662,12 @@ a.learnmore {
 	hr {
 		width: 60%;
 	}
+	h5 {
+		font-size: 1.3em;
+	}
 	h6 {
 		width: 300px;
+		margin: 30px auto;
 	}
 	.logo {
 		width:65%;
@@ -778,5 +782,9 @@ a.learnmore {
 		background-size: cover;
 		height: 300px;
 		/*background-attachment: inherit;*/
+	}
+	#webdpage {
+		background-attachment: inherit;
+		height: 350px;
 	}
 }
