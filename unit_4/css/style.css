@@ -80,7 +80,6 @@ footer {
 figure {
 	display: inline;
 	float: left;
-	/*margin: 50px auto;*/
 	width: 45%;
 }
 
@@ -253,14 +252,15 @@ video#tlvid {
 
 .pics{
 	padding-top: 0;
-	margin: 0 .5%;
+	margin: 50px 10%;
+	width: 80%;
 }
 
 .photo{
-	margin: 0;
+	margin: 1%;
 	padding: 0;
 	display: inline-block;
-	width: 24.9%;
+	width: 31.33%;
 }
 .photocontainer {
 	margin: 25px auto;
@@ -321,7 +321,6 @@ video#tlvid {
 .vidthumb{
 	position: relative;
 	width: 350px;
-	background-color: red;
 	overflow: hidden;
 }
 
@@ -360,8 +359,21 @@ video#tlvid {
 a.vidback:hover {
 	color: #044B57;
 }
+.photo:hover {
+	color: #044B57;
+}
 .stickyfoot{
 	position: absolute;
+}
+.photo img {
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: ease 0.9s;
+}
+.photo:hover img {
+	-moz-transform: scale(1.06);
+  	-webkit-transform: scale(1.06);
+  	transform: scale(1.06);
 }
 #wearediv {
 	background-color: rgba(255,255,255,.6);
@@ -591,9 +603,6 @@ a.learnmore {
 	}
 	.logo {
 		width:40%;
-	}
-	.photo{
-		width: 50%;
 	}
 	.vid {
 		float: none;
