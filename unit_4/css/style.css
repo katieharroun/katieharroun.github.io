@@ -118,7 +118,7 @@ h5 {
 	font-family: 'Josefin Slab', serif;
     font-size: 1.5em;
     margin: 30px 10%;
-    background-color: rgba(250, 250, 250, 0.45);
+    background-color: rgba(250, 250, 250, 0.65);
     padding: 20px;
 }
 
@@ -309,7 +309,7 @@ video#tlvid {
 .vidlink {
 	/*width: 100%;*/
 	display: inline-block;
-	margin: 50px 0;
+	margin: 2px;
 }
 .vidlink:hover figcaption{
 	opacity: 1;
@@ -592,8 +592,12 @@ a.learnmore {
 }
 
 @media only screen and (max-width: 1700px) {
-	.logo {
+	/*.logo {
 		margin: 50px auto;
+	}*/
+	#logobg {
+		background-attachment: inherit;
+		height: 800px;
 	}
 }
 
@@ -613,6 +617,9 @@ a.learnmore {
 		float: none;
 		width: 90%;
 		margin: 0 5%;
+	}
+	.logo {
+		margin: 80px auto;
 	}
 	#wearediv {
 		width: 80%;
@@ -637,8 +644,77 @@ a.learnmore {
 	#katiepic{
 		width:	100%;
 	}
+	#logobg {
+		height: 750px;
+	}
 	.email {
 		color: white;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.logo{
+		width: 45%;
+		margin: 30px auto;
+	}
+	.vid iframe {
+		height: 120%;
+	}
+	.vidp {
+		margin: 150px 5%;
+	}
+	.stickyfoot {
+		position: relative;
+	}
+	#logobg{
+		height: 600px;
+		background-attachment: inherit;
+	}
+	#secondpanel {
+		height: 600px;
+	}
+	#thirdpanel {
+		background-attachment: inherit;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.logo {
+		width: 40%;
+	}
+	#logobg {
+		height: 500px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	label {
+		display: block;
+		float:right;
+		padding: 15px;
+	}
+	nav{
+		display: none;
+		position:static;
+		clear:both;
+		/*float: none;*/
+	}
+	header{
+		height:auto;
+		padding: 0;
+	}
+	.navlinks{
+		float:none;
+		display:block;
+	}
+	#toggle:checked + nav {	
+		display: block;
+	}
+	#logobg {
+		height: 460px;
+	}
+	#slogan {
+		font-size: 2.6em;
 	}
 }
 
@@ -647,27 +723,10 @@ a.learnmore {
 		font-size: 10px;
 	}
 
-	label {
-		display: block;
-		float:right;
-		padding: 15px;
-	}
-
 	footer{
 		position: relative;
 	}
 
-	nav{
-		display: none;
-		position:static;
-		clear:both;
-		/*float: none;*/
-	}
-
-	header{
-		height:auto;
-		padding: 0;
-	}
 	hr {
 		width: 60%;
 	}
@@ -682,6 +741,9 @@ a.learnmore {
 		width:65%;
 		margin: 20px auto;
 	}
+	.vidp {
+		margin: 100px 5%;
+	}
 	.homewords {
 		width: 100%;
 	}
@@ -691,11 +753,6 @@ a.learnmore {
 	#slogan {
 		font-size: 2em;
 		margin: 0 auto;
-	}
-
-	.navlinks{
-		float:none;
-		display:block;
 	}
 	.vidpage .vidlayer #bgvid {
 		display: none;
@@ -712,21 +769,22 @@ a.learnmore {
 		margin: 0;
 	}
 	#vidwords {
-		width: 90%;
+		width: 100%;
 		font-size: 4em;
-		margin: 0 auto;
+		margin: 10px 0;
 	}
 	.vidlink {
 		margin: 10px 0;
 	}
 	.vidpics {
 		width: 100%;
+		margin: 10px 0;
 	}
 
 	.vid iframe {
-		margin: 0;
-		width: 100%;
-		height: 100%;
+		margin: 5%;
+		width: 90%;
+		height: 160%;
 	}
 	.vidp img {
 		width: 50%;
@@ -738,11 +796,10 @@ a.learnmore {
 	.stickyfoot {
 		position: relative;
 	}
-
-	#toggle:checked + nav {	
-		display: block;
+	.vidthumb {
+		margin: 0 5%;
+		width: 90%;
 	}
-
 	#white {
 		color: #000000;
 	}
@@ -752,6 +809,7 @@ a.learnmore {
 	#wearediv {
 		width: 95%;
 		padding: 20px;
+		margin-top: 50px;
 	}
 	#pbio {
 		padding: 0;
@@ -762,9 +820,9 @@ a.learnmore {
 	#contactac {
 		margin-top: 60px;
 	}
-	#bumpfoot {
+/*	#bumpfoot {
 		position: relative;
-	}
+	}*/
 	#thirdpanel {
 		height: 450px;
 		background-attachment: inherit;
