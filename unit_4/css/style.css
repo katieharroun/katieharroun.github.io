@@ -27,6 +27,8 @@ body {
 header {
 	background-color: rgba(255, 255, 255, 1);
 	/*height: 80px;*/
+	/*position: fixed;
+	width: 100%;*/
 }
 
 nav {
@@ -65,6 +67,9 @@ a {
 a.navlinks:hover {
 	background-color: #efefef;
 	/*color: rgb(71,78,79);*/
+}
+a.currentpage {
+	background-color: #efefef;
 }
 
 footer {
@@ -118,7 +123,7 @@ h5 {
 	font-family: 'Josefin Slab', serif;
     font-size: 1.5em;
     margin: 30px 10%;
-    background-color: rgba(250, 250, 250, 0.65);
+    background-color: rgba(250, 250, 250, 0.45);
     padding: 20px;
 }
 
@@ -240,10 +245,38 @@ video#tlvid {
 }
 
 .socmedia {
-	display: inline;
-	float: left;
-	margin: 10px 15px;
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	position: relative;
+	margin: 10px;
+
+	-webkit-transition: all linear 200ms;
+	-moz-transition: all linear 200ms;
+	-o-transition: all linear 200ms;
+	transition: all linear 200ms;
 }
+
+.socmedia img {
+	border: none;
+	display: block;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	position: absolute;
+	top: 0;
+
+	-webkit-transition: all linear 200ms;
+	-moz-transition: all linear 200ms;
+	-o-transition: all linear 200ms;
+	transition: all linear 200ms;
+}
+
+.socmedia img:first-child,
+a:hover img:first-child + img {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
 
 .email {
 	padding-top: 25px;
@@ -309,7 +342,7 @@ video#tlvid {
 .vidlink {
 	/*width: 100%;*/
 	display: inline-block;
-	margin: 2px;
+	margin: 50px 0;
 }
 .vidlink:hover figcaption{
 	opacity: 1;
@@ -385,7 +418,19 @@ a.vidback:hover {
 
 .foothome{
 	/*position: absolute;*/
+	height: 60px;
 }
+
+#copyright {
+	height: 40px;
+	background-color: #ccc;
+}
+#copyright p {
+	color: #fff;
+	font-size: 1.2em;
+	padding-top: 5px;
+}
+
 #wearediv {
 	background-color: rgba(255,255,255,.6);
 	padding: 40px 60px 80px 60px;
@@ -410,6 +455,125 @@ a.vidback:hover {
 	-o-transition: all ease;
 	-moz-transition: all ease;
 	transition: all ease; 
+}
+
+#processpassion {
+	background: url(../images/largerimages/CapitolReefRedHillsBG.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 850px;
+	-webkit-transition: all ease;
+	-o-transition: all ease;
+	-moz-transition: all ease;
+	transition: all ease;	
+}
+
+#whatwedo {
+	background: url(../images/largerimages/donnerdronebg.jpg); 
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	height: 1000px;
+	-webkit-transition: all 100ms ease;
+	-o-transition: all 100ms ease;
+	-moz-transition: all 100ms ease;
+	transition: all 100ms ease;	
+}
+
+.processblocks {
+	float: left;
+	width: 30%;
+	height: 500px;
+}
+
+.processblocks img {
+	margin: 2.5em;
+}
+
+.processangles {
+	display: inline-block;
+	float: left;
+	width: 5%;
+	/*height: 500px;*/
+	margin: 213px 0;
+}
+
+.processiconfader {
+	position: relative;
+	height: 150px;
+}
+
+.processiconfader img {
+  position:absolute;
+  left: 0;
+  right: 0;
+  margin: 20px auto;
+  padding: 0;
+  -webkit-transition: opacity 200ms ease-in-out;
+  -moz-transition: opacity 200ms ease-in-out;
+  -o-transition: opacity 200ms ease-in-out;
+  transition: opacity 200ms ease-in-out;
+}
+
+.processiconfader img.top:hover {
+  opacity:0;
+}
+
+.sectionwhatwedo {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.whatwedolinks {
+	font-size: 2em;
+	text-decoration: none;
+	color: #E8674F;
+	padding: 1em;
+	-webkit-transition: all linear 200ms;
+	-moz-transition: all linear 200ms;
+	-o-transition: all linear 200ms;
+	transition: all linear 200ms;
+}
+
+.whatwedolinks:hover {
+	color: #fff;
+	background-color: #E8674F;
+}
+
+.whatwedoblocks {
+	display: inline-block;
+	background-color: #fff;
+	margin: 3px;
+}
+
+.processblocks p {
+	font-family: 'Josefin Slab', serif;
+}
+
+.fa {
+	padding: 40px 10px;	
+}
+
+#video {
+	border
+	border-bottom-right-radius: 1em;
+}
+
+.processheader {
+	padding: 2em;
+	font-size: 4em;
+	color: #222;
+}
+
+#passionp {
+	display: inline-block;
+	width: 60%;
+	color: #222;
+}
+
+.sectionprocess {
+
 }
 
 .byline {
@@ -449,16 +613,22 @@ a.vidback:hover {
 	-moz-transition: all ease;
 	transition: all ease; 
 }
-a.learnmore {
+.learnmore {
+	font-family: 'Josefin Slab', serif;
 	text-decoration: none;
 	display: inline;
 	padding: 25px;
 	font-size: 2em;
 	font-family: 'Josefin Slab', serif;
 	/*text-transform: uppercase;*/
-	color: #FBB040;
-	background-color: #044B57;
+	color: #E8674F;
+	background-color: rgba(255,255,255,.7);
 }
+.learnmore:hover {
+	color: #EEE;
+	background-color: #E8674F;
+}
+
 #slogan {
 	font-family: 'Josefin Slab', serif;
 	color: #41495C;
@@ -535,7 +705,7 @@ a.learnmore {
 }
 
 #photopage{
-	background-color: #424242;
+	background-color: #54504D;
 }
 
 #contactpage{
@@ -592,12 +762,17 @@ a.learnmore {
 }
 
 @media only screen and (max-width: 1700px) {
-	/*.logo {
+	.logo {
 		margin: 50px auto;
-	}*/
-	#logobg {
-		background-attachment: inherit;
-		height: 800px;
+	}
+	.processblocks p {
+		font-size: 1.5em;
+	}
+	.processheader {
+		padding: 1.4em;
+	}
+	#passionp {
+		width: 80%;
 	}
 }
 
@@ -617,9 +792,6 @@ a.learnmore {
 		float: none;
 		width: 90%;
 		margin: 0 5%;
-	}
-	.logo {
-		margin: 80px auto;
 	}
 	#wearediv {
 		width: 80%;
@@ -644,77 +816,11 @@ a.learnmore {
 	#katiepic{
 		width:	100%;
 	}
-	#logobg {
-		height: 750px;
-	}
 	.email {
 		color: white;
 	}
-}
-
-@media only screen and (max-width: 1100px) {
-	.logo{
-		width: 45%;
-		margin: 30px auto;
-	}
-	.vid iframe {
-		height: 120%;
-	}
-	.vidp {
-		margin: 150px 5%;
-	}
-	.stickyfoot {
-		position: relative;
-	}
-	#logobg{
-		height: 600px;
-		background-attachment: inherit;
-	}
-	#secondpanel {
-		height: 600px;
-	}
-	#thirdpanel {
-		background-attachment: inherit;
-	}
-}
-
-@media only screen and (max-width: 900px) {
-	.logo {
-		width: 40%;
-	}
-	#logobg {
-		height: 500px;
-	}
-}
-
-@media only screen and (max-width: 750px) {
-	label {
-		display: block;
-		float:right;
-		padding: 15px;
-	}
-	nav{
-		display: none;
-		position:static;
-		clear:both;
-		/*float: none;*/
-	}
-	header{
-		height:auto;
-		padding: 0;
-	}
-	.navlinks{
-		float:none;
-		display:block;
-	}
-	#toggle:checked + nav {	
-		display: block;
-	}
-	#logobg {
-		height: 460px;
-	}
-	#slogan {
-		font-size: 2.6em;
+	#passionp {
+		width: 80%;
 	}
 }
 
@@ -723,10 +829,27 @@ a.learnmore {
 		font-size: 10px;
 	}
 
+	label {
+		display: block;
+		float:right;
+		padding: 15px;
+	}
+
 	footer{
 		position: relative;
 	}
 
+	nav{
+		display: none;
+		position:static;
+		clear:both;
+		/*float: none;*/
+	}
+
+	header{
+		height:auto;
+		padding: 0;
+	}
 	hr {
 		width: 60%;
 	}
@@ -738,14 +861,13 @@ a.learnmore {
 		margin: 30px auto;
 	}
 	.logo {
-		width:65%;
-		margin: 20px auto;
-	}
-	.vidp {
-		margin: 100px 5%;
+		width:50%;
+		margin: 40px auto;
 	}
 	.homewords {
 		width: 100%;
+		padding: 0 10%;
+		margin: 75px 0;
 	}
 	#transform {
 		width: 100%;
@@ -753,6 +875,11 @@ a.learnmore {
 	#slogan {
 		font-size: 2em;
 		margin: 0 auto;
+	}
+
+	.navlinks{
+		float:none;
+		display:block;
 	}
 	.vidpage .vidlayer #bgvid {
 		display: none;
@@ -769,22 +896,21 @@ a.learnmore {
 		margin: 0;
 	}
 	#vidwords {
-		width: 100%;
+		width: 90%;
 		font-size: 4em;
-		margin: 10px 0;
+		margin: 40px auto;
 	}
 	.vidlink {
 		margin: 10px 0;
 	}
 	.vidpics {
 		width: 100%;
-		margin: 10px 0;
 	}
 
 	.vid iframe {
-		margin: 5%;
-		width: 90%;
-		height: 160%;
+		margin: 0;
+		width: 100%;
+		height: 100%;
 	}
 	.vidp img {
 		width: 50%;
@@ -796,10 +922,11 @@ a.learnmore {
 	.stickyfoot {
 		position: relative;
 	}
-	.vidthumb {
-		margin: 0 5%;
-		width: 90%;
+
+	#toggle:checked + nav {	
+		display: block;
 	}
+
 	#white {
 		color: #000000;
 	}
@@ -809,7 +936,6 @@ a.learnmore {
 	#wearediv {
 		width: 95%;
 		padding: 20px;
-		margin-top: 50px;
 	}
 	#pbio {
 		padding: 0;
@@ -820,9 +946,9 @@ a.learnmore {
 	#contactac {
 		margin-top: 60px;
 	}
-/*	#bumpfoot {
-		position: relative;
-	}*/
+	#bumpfoot {
+		/*position: relative;*/
+	}
 	#thirdpanel {
 		height: 450px;
 		background-attachment: inherit;
@@ -853,5 +979,37 @@ a.learnmore {
 	#webdpage {
 		background-attachment: inherit;
 		height: 350px;
+	}
+	.processheader {
+		padding: 1em;
+		font-size: 3.5em;
+	}
+	#passionp {
+		width: 100%;
+		padding: 0 7%;
+	}
+	#processpassion {
+		height: 650px;
+	}
+	.processblocks {
+		float: none;
+		display: block;
+		width: 100%;
+		height: 325px;
+	}
+	.processblocks p {
+		padding: 0 5%;
+		line-height: 1.3em;
+	}
+	.processangles {
+		float: none;
+		display: block;
+		margin: 0;
+	}
+	.processangles img {
+		display: none;
+	}
+	#whatwedo {
+		height: 650px;
 	}
 }
